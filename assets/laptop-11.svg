@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" role="img" aria-label="Illustrated laptop">
+<rect width="480" height="300" rx="22" fill="#e2e8f0"/>
+<rect x="88" y="45" width="304" height="196" rx="13" fill="#0f172a"/>
+<rect x="98" y="55" width="284" height="176" rx="6" fill="#334155"/>
+<path d="M98 188 L239 70 L382 188 L382 231 L98 231Z" fill="#ffffff" fill-opacity=".12"/>
+<rect x="66" y="240" width="348" height="16" rx="5" fill="#475569"/>
+<path d="M52 253 H428 L410 266 H70 Z" fill="#94a3b8"/>
+<text x="240" y="157" font-size="20" font-family="Arial,sans-serif" font-weight="bold" fill="white" text-anchor="middle">Flip 14</text>
+</svg>

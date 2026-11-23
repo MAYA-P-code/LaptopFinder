@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Index | Student Laptop Finder</title>
+  <link rel="stylesheet" href="./dist/output.css">
+</head>
+<body class="flex min-h-screen flex-col">
+  <header id="site-header" class="bg-[var(--card-bg)]"></header>
+  <main class="mx-auto w-full max-w-6xl flex-1 px-4 py-8">
+    <h1 class="text-2xl font-bold">Student Laptop Finder</h1>
+<p class="mt-2">Find, save, and compare laptops for students.</p>
+<div class="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-3">
+  <div class="laptop-card"><h2 class="font-semibold">Total Laptops</h2><p id="total-laptops" class="mt-2 text-2xl">--</p></div>
+  <div class="laptop-card"><h2 class="font-semibold">Lowest Price</h2><p id="lowest-price" class="mt-2 text-2xl">--</p></div>
+  <div class="laptop-card"><h2 class="font-semibold">Saved Favorites</h2><p id="favorites-count" class="mt-2 text-2xl">--</p></div>
+</div>
+<p id="home-status" role="status" class="mt-4"></p>
+  </main>
+  <footer id="site-footer" class="bg-[var(--card-bg)]"></footer>
+  <script type="module" src="./src/js/ui.js"></script>
+  <script type="module" src="./src/js/home.js"></script>
+</body>
+</html>

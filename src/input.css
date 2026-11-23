@@ -1,0 +1,47 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/forms";
+
+@theme {
+  --color-mint: #059669;
+  --color-mint-light: #ecfdf5;
+  --color-performance: #f97316;
+}
+
+@layer base {
+  :root {
+    --page-bg: #ecfdf5;
+    --page-text: #111827;
+    --card-bg: #ffffff;
+    --accent: #059669;
+    --accent-text: #ffffff;
+    --border-color: #d1d5db;
+  }
+  [data-theme="performance"] {
+    --page-bg: #111827;
+    --page-text: #f9fafb;
+    --card-bg: #1f2937;
+    --accent: #f97316;
+    --accent-text: #111827;
+    --border-color: #4b5563;
+  }
+  body { background-color: var(--page-bg); color: var(--page-text); }
+  input, select { background-color: var(--card-bg); color: var(--page-text); border-color: var(--border-color); }
+}
+
+@layer components {
+  .laptop-card {
+    @apply rounded-lg p-4 shadow-sm transition-shadow hover:shadow-md;
+    background-color: var(--card-bg);
+    color: var(--page-text);
+  }
+  .btn-action {
+    @apply rounded-md px-4 py-2 font-medium transition-opacity hover:opacity-80 focus-visible:outline-2 focus-visible:outline-offset-2 disabled:opacity-50;
+    background-color: var(--accent);
+    color: var(--accent-text);
+  }
+  .best-value {
+    @apply font-semibold;
+    background-color: var(--accent);
+    color: var(--accent-text);
+  }
+}

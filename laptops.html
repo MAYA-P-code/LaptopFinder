@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laptops | Student Laptop Finder</title>
+  <link rel="stylesheet" href="./dist/output.css">
+</head>
+<body class="flex min-h-screen flex-col">
+  <header id="site-header" class="bg-[var(--card-bg)]"></header>
+  <main class="mx-auto w-full max-w-6xl flex-1 px-4 py-8">
+    <h1 class="text-2xl font-bold">Laptop Catalogue</h1>
+<p class="mt-2">Browse and filter available laptops.</p>
+<div class="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+  <div><label for="search" class="mb-1 block">Search</label><input id="search" type="search" placeholder="Name or brand" class="w-full rounded-md"></div>
+  <div><label for="category" class="mb-1 block">Category</label><select id="category" class="w-full rounded-md"><option value="">All Categories</option><option value="ultrabook">Ultrabook</option><option value="gaming">Gaming</option><option value="2-in-1">2-in-1</option><option value="creator">Creator</option><option value="budget">Budget</option></select></div>
+  <div><label for="max-price" class="mb-1 block">Maximum Price</label><input id="max-price" type="number" min="0" placeholder="Any price" class="w-full rounded-md"></div>
+  <div><label for="min-ram" class="mb-1 block">Minimum RAM (GB)</label><input id="min-ram" type="number" min="0" placeholder="Any RAM" class="w-full rounded-md"></div>
+  <div><label for="sort" class="mb-1 block">Sort By</label><select id="sort" class="w-full rounded-md"><option value="default">Default</option><option value="price-asc">Price: Low to High</option><option value="price-desc">Price: High to Low</option><option value="battery-asc">Battery: Low to High</option><option value="battery-desc">Battery: High to Low</option><option value="weight-asc">Weight: Low to High</option><option value="weight-desc">Weight: High to Low</option></select></div>
+</div>
+<p id="result-count" class="mt-6 font-medium"></p>
+<p id="catalogue-status" role="status" class="mt-2"></p>
+<div id="laptop-list" class="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3"></div>
+  </main>
+  <footer id="site-footer" class="bg-[var(--card-bg)]"></footer>
+  <script type="module" src="./src/js/ui.js"></script>
+  <script type="module" src="./src/js/laptops.js"></script>
+</body>
+</html>
